@@ -1,8 +1,11 @@
 # Data-enhancement
 Support data enhancement when there are few data sets（支持数据集较少的情况进行数据增强，包含随机的多种变化）
-# 这是一个目标检测和目标分割增强的小工具，需要您事先标记一些图片，然后变化增强图片(支持LabelIMg和LabelMe标注的文件)，希望对您有所帮助！<br>
+这是数据集扩增的一个小工具，在您想使用yolo等目标检测算法时数据集较少的情况下能够进行变化增强图片，丰富您的数据集。
+(支持LabelIMg和LabelMe标注的文件)
+包括3个python文件
 
-**包括3个python文件（rename_file.py、DataAugmentforLabelImg.py和DataAugmentforLabelMe.py）**<br>
+（rename_file.py、DataAugmentforLabelImg.py和DataAugmentforLabelMe.py）
+原文链接：https://blog.csdn.net/qq_39740357/article/details/123258697
 
 1. rename_file.py能实现文件的重命名,注意修改文件的路径
 2. DataAugmentforLabelImg.py能实现LabelImg标注后的图片的增强（包括模糊，亮度，裁剪，旋转，平移，镜像等变化）
