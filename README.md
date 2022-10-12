@@ -1,5 +1,6 @@
 # Data-enhancement
-2022/10/22 修改了github代码导致xmax<xmin的情况。（由于上传疏忽，正确的代码修改了后上传的错误的版本）
+**2022/10/22 修改了github代码导致xmax<xmin的情况。（由于上传疏忽，正确的代码修改了后上传的错误的版本）**
+
 Support data enhancement when there are few data sets（支持数据集较少的情况进行数据增强，包含随机的多种变化）
 这是数据集扩增的一个小工具，在您想使用yolo等目标检测算法时数据集较少的情况下能够进行变化增强图片，丰富您的数据集。
 (支持LabelIMg和LabelMe标注的文件)
