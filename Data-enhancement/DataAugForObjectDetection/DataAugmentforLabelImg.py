@@ -364,13 +364,16 @@ class DataAugmentForObjectDetection():
             y_min = box[1]
             x_max = box[2]
             y_max = box[3]
+            
             if inver == 0:
-                flip_bboxes.append([x_max, h - y_min, x_min, h - y_max])
+                #0：垂直翻转
+                flip_bboxes.append([x_min, h - y_max, x_max, h - y_min])
             elif inver == 1:
+                # 1：水平翻转
                 flip_bboxes.append([w - x_max, y_min, w - x_min, y_max])
             elif inver == -1:
-                flip_bboxes.append([w - x_min, h - y_max, w - x_max, h - y_min])
-
+                # -1：水平垂直翻转
+                flip_bboxes.append([w - x_max, h - y_max, w - x_min, h - y_min])
         return flip_img, flip_bboxes
 
     # 图像增强方法
